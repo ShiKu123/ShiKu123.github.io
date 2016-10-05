@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harambe</title>
+<style>
+    body{
+        background-image: url("https://goo.gl/EWqZ7c");
+        background-repeat: no-repeat;;
+        background-size: cover;;
+    }
+    h1, h3{
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px black;
+        font-weight: bold;
+    }
+    h1{
+        font-size: 30pt;
+    }
+    div#main-harambe{
+        display: flex;
+        justify-content:center;
+        visibility: hidden;
+    }
+    div#main{
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:50%;
+        overflow:auto;
+    }
+</style>
+</head>
+<body>
+<div id="main">
+    <h1>404 HARAMBE NOT FOUND</h1>
+    <h3>For more information on this national tragedy; please click <a href="https://goo.gl/hZNKr7">here</a></h3>
+</div>
+<div id="main-harambe" class="main">
+    <iframe class="harambe" width="560" height="340" align="middle"
+    src="https://www.youtube.com/embed/OJw3MmL-Omk?autoplay=1"
+    frameborder="0" allowfullscreen></iframe>
+</div>
+</body>
+</html>
